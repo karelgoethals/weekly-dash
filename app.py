@@ -7,8 +7,8 @@ st.set_page_config(page_title="Media Dashboard", layout="wide")
 
 DB_FILE = "media_data.db"
 
-CHANNELS = ["Paid Social", "Search", "Display", "Programmatic", "TV", "Video/YouTube", "Other"]
-METRICS = ["Spend", "Impressions", "Clicks", "Conversions"]
+CHANNELS = ["Search", "IO Display", "Programmatic Display", "IO Video", "Programmatic Video", "Native"]
+METRICS = ["Media Budget", "Impressions", "Clicks", "Conversions"]
 
 def init_db():
     conn = sqlite3.connect(DB_FILE)
