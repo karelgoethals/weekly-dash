@@ -52,7 +52,7 @@ def delete_entry(entry_id):
 
 init_db()
 
-st.sidebar.title("Media Dashboard")
+st.sidebar.title("Initiative + Orange Weekly Dashboard")
 page = st.sidebar.radio("Navigate", ["Add Data", "Dashboard", "Manage Data"])
 
 if page == "Add Data":
@@ -75,7 +75,7 @@ if page == "Add Data":
             st.success(f"Saved: {channel} / {metric} = {value} for week of {week_start.date()}")
 
 elif page == "Dashboard":
-    st.title("Performance Dashboard")
+    st.title("Weekly overview for Orange Belgium")
     df = load_data()
 
     if df.empty:
