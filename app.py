@@ -3,7 +3,7 @@ import pandas as pd
 import sqlite3
 from datetime import date
 
-st.set_page_config(page_title="Media Dashboard", layout="wide")
+st.set_page_config(page_title="Initiative + Orange Weekly Dashboard", layout="wide")
 
 DB_FILE = "media_data.db"
 
