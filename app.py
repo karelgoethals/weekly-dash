@@ -52,8 +52,8 @@ def delete_entry(entry_id):
 
 init_db()
 
-st.sidebar.title("Media Dashboard")
-page = st.sidebar.radio("Navigate", ["Add Entry", "Dashboard", "Manage Data"])
+st.sidebar.title("Initiative + Orange Weekly Dashboard")
+page = st.sidebar.radio("Navigate", ["Add Weekly Data", "Dashboard", "Manage Weekly Data"])
 
 if page == "Add Entry":
     st.title("Add Weekly Data")
