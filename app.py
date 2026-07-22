@@ -53,9 +53,9 @@ def delete_entry(entry_id):
 init_db()
 
 st.sidebar.title("Media Dashboard")
-page = st.sidebar.radio("Navigate", ["Add Entry", "Dashboard", "Manage Data"])
+page = st.sidebar.radio("Navigate", ["Add Data", "Dashboard", "Manage Data"])
 
-if page == "Add Entry":
+if page == "Add Data":
     st.title("Add Weekly Data")
     st.caption("Enter one row per channel/metric combination. Week is auto-set to the Monday of the selected date.")
 
