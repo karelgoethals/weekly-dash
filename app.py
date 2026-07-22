@@ -79,7 +79,7 @@ elif page == "Dashboard":
     df = load_data()
 
     if df.empty:
-        st.info("No data yet. Go to 'Add Entry' to start logging data.")
+        st.info("No data yet. Go to 'Add Data' to start logging data.")
     else:
         metric_filter = st.selectbox("Select metric to visualize", METRICS)
         filtered = df[df["metric"] == metric_filter]
